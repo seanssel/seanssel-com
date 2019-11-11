@@ -122,12 +122,14 @@ h1 {
 
     .profile-card img {
         align-self: center;
-        width: 80vh;
+        max-width: 300px;
     }
 
     .profile-info {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     }
+
+
 }
