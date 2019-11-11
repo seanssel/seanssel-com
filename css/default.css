@@ -121,8 +121,8 @@ h1 {
     }
 
     .profile-card img {
-        height: 100%;
         align-self: center;
+        width: 80vh;
     }
 
     .profile-info {
