@@ -1,0 +1,133 @@
+/* Entypo pictograms by Daniel Bruce — www.entypo.com */
+
+@font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fira-code-v7-latin-regular.eot');
+    src: local(''), url('../fonts/fira-code-v7-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/fira-code-v7-latin-regular.woff2') format('woff2'), url('../fonts/fira-code-v7-latin-regular.woff') format('woff'), url('../fonts/fira-code-v7-latin-regular.ttf') format('truetype'), url('../fonts/fira-code-v7-latin-regular.svg#FiraCode') format('svg')
+}
+
+:root {
+    --main-bg-color: #22262a;
+    --secondary-bg-color: #181f24c2;
+    --main-fg-color: #e5e9e1df;
+    --main-accent-color: #beda99e3;
+    --secondary-accent-color: #beda9986;
+    --shadow-1: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Fira Code", monospace;
+    color: var(--main-fg-color);
+}
+
+html {
+    background-color: var(--main-bg-color);
+    background-image: url("/images/pattern-bg.svg");
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+li {
+    list-style-type: none;
+}
+
+h1, p {
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, .4));
+    font-size: 1.4em;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+    box-shadow: var(--shadow-1);
+    max-width: 400px;
+    border: 4px inset #47596617;
+}
+
+.profile-card img {
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: var(--shadow-2);
+}
+
+
+.name {
+    color: var(--main-accent-color);
+    font-size: 1.6em;
+}
+
+.city {
+    color: var(--secondary-accent-color);
+}
+
+.profile-bio  p {
+    font-size: 1.1em;
+    margin: 6px;
+    margin-top: 40px;
+}
+
+.profile-social {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.profile-social svg {
+    width: 42px;
+    height: 32px;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, .7));
+}
+
+.profile-social svg path {
+    fill: var(--main-fg-color);
+}
+
+.profile-social svg:hover path {
+    fill: var(--main-accent-color);
+    transform: scale(1.08);
+}
+
+/* Media queries */
+
+@media (min-width: 640px) {
+    .profile-card {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .profile-card img {
+        height: 100%;
+        align-self: center;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
