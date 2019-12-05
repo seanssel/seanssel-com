@@ -4,8 +4,8 @@
     font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/fira-code-v7-latin-regular.eot');
-    src: local(''), url('../fonts/fira-code-v7-latin-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/fira-code-v7-latin-regular.woff2') format('woff2'), url('../fonts/fira-code-v7-latin-regular.woff') format('woff'), url('../fonts/fira-code-v7-latin-regular.ttf') format('truetype'), url('../fonts/fira-code-v7-latin-regular.svg#FiraCode') format('svg')
+    src: url('../assets/fonts/fira-code-v7-latin-regular.eot');
+    src: local(''), url('../assets/fonts/fira-code-v7-latin-regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/fira-code-v7-latin-regular.woff2') format('woff2'), url('../assets/fonts/fira-code-v7-latin-regular.woff') format('woff'), url('../assets/fonts/fira-code-v7-latin-regular.ttf') format('truetype'), url('../assets/fonts/fira-code-v7-latin-regular.svg#FiraCode') format('svg')
 }
 
 :root {
@@ -72,7 +72,6 @@ h1 {
     box-shadow: var(--shadow-2);
 }
 
-
 .name {
     color: var(--main-accent-color);
     font-size: 1.6em;
@@ -130,6 +129,4 @@ h1 {
         flex-direction: column;
         justify-content: space-around;
     }
-
-
 }
