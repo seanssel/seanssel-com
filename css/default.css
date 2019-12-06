@@ -30,7 +30,7 @@ body {
 
 html {
     background-color: var(--main-bg-color);
-    background-image: url("assets/images/pattern-bg.svg");
+    background-image: url("../assets/images/pattern-bg.svg");
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%;
 }
