@@ -8,16 +8,6 @@
     src: local(''), url('../assets/fonts/fira-code-v7-latin-regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/fira-code-v7-latin-regular.woff2') format('woff2'), url('../assets/fonts/fira-code-v7-latin-regular.woff') format('woff'), url('../assets/fonts/fira-code-v7-latin-regular.ttf') format('truetype'), url('../assets/fonts/fira-code-v7-latin-regular.svg#FiraCode') format('svg')
 }
 
-:root {
-    --main-bg-color: #22262a;
-    --secondary-bg-color: #181f24c2;
-    --main-fg-color: #e5e9e1df;
-    --main-accent-color: #beda99e3;
-    --secondary-accent-color: #beda9986;
-    --shadow-1: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    --shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
 * {
     box-sizing: border-box;
 }
@@ -25,11 +15,11 @@
 html,
 body {
     font-family: "Fira Code", monospace;
-    color: var(--main-fg-color);
+    color: #e5e9e1df;
 }
 
 html {
-    background-color: var(--main-bg-color);
+    background-color: #22262a;
     background-image: url("../assets/images/pattern-bg.svg");
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%;
@@ -60,8 +50,8 @@ h1 {
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
-    background-color: var(--secondary-bg-color);
-    box-shadow: var(--shadow-1);
+    background-color: #181f24c2;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     max-width: 400px;
     border: 4px inset #47596617;
 }
@@ -69,16 +59,16 @@ h1 {
 .profile-card img {
     border-radius: 10px;
     width: 100%;
-    box-shadow: var(--shadow-2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .name {
-    color: var(--main-accent-color);
+    color: #beda99e3;
     font-size: 1.6em;
 }
 
 .city {
-    color: var(--secondary-accent-color);
+    color: #beda9986;
 }
 
 .profile-bio  p {
@@ -103,11 +93,11 @@ h1 {
 }
 
 .profile-social svg path {
-    fill: var(--main-fg-color);
+    fill: #e5e9e1df;
 }
 
 .profile-social svg:hover path {
-    fill: var(--main-accent-color);
+    fill: #beda99e3;
     transform: scale(1.08);
 }
 
